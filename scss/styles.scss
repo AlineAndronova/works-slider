@@ -1,0 +1,116 @@
+@import 'normalize.css';
+@import 'layout';
+
+@import 'slick';
+@import 'slick-theme';
+
+.ba-home {
+	background-color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: #000000;
+	text-transform: uppercase;
+	padding: 50px 0;
+}
+
+.ba-text-wrapper {
+	width: 1150px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.ba-text {
+	letter-spacing: 3.5px;
+}
+
+.ba-title {
+	font-size: 86px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin: 0 0 90px;
+}
+
+.ba-image {
+	position: absolute;
+}
+
+.ba-image--plus {
+	top: -25px;
+	right: 15%;
+}
+
+.ba-image--triangle {
+	left: -30px;
+	bottom: 30%;
+}
+
+.ba-container__item {
+	outline: none;
+}
+
+.ba-container__image {
+	width: 345px;
+	height: 300px;
+}
+
+.slick-arrow {
+	z-index: 10;
+	&:before {
+		color: transparent;
+	}
+}
+
+.slick-prev,
+.slick-next {
+	width: 100px;
+	height: 100px;
+	border: 3px solid #000000;
+	border-radius: 50%;
+    font-size: 0;
+    position: absolute;
+    bottom: 50%;
+    color: #000000;
+    background: none;
+    z-index: 1;
+    transition: .2s ease-in;
+    opacity: 1;
+    &:hover {
+    	opacity: 0.6;
+    }
+}
+
+.slick-prev {
+    left: -70px;
+}
+
+.slick-prev:after {
+	content: "\f104";
+    font: 60px/1 'FontAwesome';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in;
+}
+
+.slick-next {
+    right: -20px;
+    text-align: right;
+}
+
+.slick-next:after {
+	content: "\f105";
+    font: 60px/1 'FontAwesome';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-in;
+}
+
+.slick-prev:hover:after,
+.slick-next:hover:after {
+    color: #635a5a;
+}
